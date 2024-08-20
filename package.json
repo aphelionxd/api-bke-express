@@ -1,28 +1,36 @@
 {
-  "name": "api-bke-express",
+  "name": "api-bke-express-ads-2sem2024",
   "version": "1.0.0",
-  "description": "API node com express para backend do 3° modulo do IFSP",
+  "description": "API Node com framework Express",
   "main": "src/server.js",
   "type": "module",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "node --watch src/server.js"
-
+    "dev": "node --watch src/server.js",
+    "prisma:pull": "npx prisma db pull",
+    "prisma:generate": "npx prisma generate"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aphelionxd/api-bke-express.git"
+    "url": "git+https://github.com/renancavichi/api-bke-express-ads-2sem2024.git"
   },
   "keywords": [
-    "API",
+    "api",
+    "node",
     "express",
-    "zod",
-    "mvc"
+    "zod"
   ],
-  "author": "Ricardo Oliveira",
+  "author": "Renan Cavichi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aphelionxd/api-bke-express/issues"
+    "url": "https://github.com/renancavichi/api-bke-express-ads-2sem2024/issues"
   },
-  "homepage": "https://github.com/aphelionxd/api-bke-express#readme"
+  "homepage": "https://github.com/renancavichi/api-bke-express-ads-2sem2024#readme",
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.18.0"
+  }
 }
